@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MJOStudios</title>
+    <style>
+        /* Get Font */
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        
+        .special-elite-regular {
+          font-family: "Special Elite", serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .logo {
+          width: 10%;
+          max-width: 10%;
+          height: 10%;
+          max-height: 10%;
+        }
+
+        /* Body and main layout */
+        body {
+            font-family: 'Special Elite', serif;
+            background: linear-gradient(45deg, #1e1e1e, #8B0000);
+            color: white;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            font-family: 'Special Elite', serif;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff4d4d;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: linear-gradient(45deg, #8B0000, #1e1e1e);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo h1 {
+            font-size: 1.0rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #ff0000, #1e1e1e);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            background: #333;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        /* Video Section */
+        .videos {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e1e1e, #ff4d4d);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        /* Games Section */
+        .games {
+            padding: 60px 20px;
+            background: #222;
+            text-align: center;
+        }
+
+        .games h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .game {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .game img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .game img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 20px;
+            background: #222;
+            text-align: center;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.2rem;
+            color: #ff4d4d;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            background: #1e1e1e;
+            text-align: center;
+            color: #888;
+        }
+
+        .footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="https://assets.onecompiler.app/428e798db/43abe74f4/MJOStudios%20Logo!%20(1).png" alt="MJOStudios Logo goes here :)">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>MJOStudios</h2>
+        <p>Discover the latest creative content, gaming videos, and more!</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About MJOStudios</h2>
+        <p>Wassup! I’m a gamer creating a game! 🎮 I'm from Massachusetts but sometimes find myself in a different state. I didn’t really need to explain 𝘁𝗵𝗮𝘁... 😅</p>
+        <p>Feel free to enjoy this channel as I share gaming content, vlogs, and of course updates about my game development. 𝕊𝕠 𝕝𝕖𝕥'𝕤 𝕘𝕠!</p>
+    </section>
+
+    <section id="videos" class="videos">
+        <h2>Latest Videos</h2>
+        <div class="video-grid">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XU-5P-RdIWM?si=mN6Lh-nES204UFhK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eP_fi6xetAg?si=PgiUtw1wlKYbsSUR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- More video embeds can be added here -->
+        </div>
+    </section>
+
+    <!-- New Games Section -->
+    <section id="games" class="games">
+        <h2>Games I'm Making</h2>
+        <div class="games-grid">
+            <!-- Game 1 -->
+            <a href="https://scratch.mit.edu/projects/1085771463/" class="game" target="_blank">
+                <img src="https://assets.onecompiler.app/428e798db/438pz9cgr/Drawing.sketchpad%20(4).png" alt="Game 1">
+            </a>
+            <!-- Game 2 -->
+            <a href="https://link-to-your-game-2.com" class="game" target="_blank">
+                <img src="https://via.placeholder.com/400x250/ff4d4d/ffffff?text=Game+2" alt="Game 2">
+            </a>
+            <br>
+            <!-- Coming Soon! -->
+            <p>More games are Coming Soon!</p>
+            <!-- More game links can be added in the same format -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact MJOStudios</h2>
+        <p>Got questions? Want to collab? Reach out to me via my social media or email!</p>
+        <div class="social-links">
+            <a href="https://discord.com/invite/YOUR_DISCORD_INVITE" class="social-links" target="_blank">
+              <img src="https://assets.onecompiler.app/428e798db/43abe74f4/discord-alt%20(1).png" alt="Discord">
+            </a>
+            <a href="https://www.reddit.com/r/MJOStudios" class="social-links" target="_blank">
+              <img src="https://assets.onecompiler.app/428e798db/43abe74f4/2111589.png" alt="Reddit">
+            </a>
+            <a href="https://www.twitch.tv/YOUR_TWITCH_CHANNEL" class="social-links" target="_blank">
+              <img src="https://assets.onecompiler.app/428e798db/43abe74f4/5968819.png" alt="Twitch">
+            </a>
+            <a href="mailto:mrjosephgaming777@gmail.com" class="social-links" target="_blank">
+              <img src="https://assets.onecompiler.app/428e798db/43abe74f4/pngimg.com%20-%20gmail_logo_PNG12.png" alt="Gmail">
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 MJOStudios. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
